@@ -1,0 +1,76 @@
+body {
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    background-color: #619361;
+}
+
+header {
+    text-align: center
+}
+
+main {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    input, button {
+        font-size: 24px;
+    }
+
+    .box {
+        background-color: #22222233;
+        padding: 8px;
+        border-radius: 8px;
+
+        &.hint {
+            width: 95%;
+
+            #reveal-hint {
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.354);
+                color: white;
+                border-radius: 8px;
+                border: 0;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+
+        button, input {
+            margin-top: 8px;
+        }
+    }
+
+    dialog {
+        border-radius: 8px;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 8px;
+            button {
+                font-size: initial;
+                border-radius: 5px;
+                border: 0;
+
+                &#confirm {
+                    background-color: #6f8cd7;
+                }
+            }
+        }
+    }
+}

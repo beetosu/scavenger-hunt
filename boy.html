@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chloe's Scavenger Hunt!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="next-step" content="duck"/>
+    <meta name="answer" content="duck"/>
+    <script src="answer-form.js" defer></script>
+    <script src="hints.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Scavenger Hunt!</h1>
+    </header>
+    <main>
+        <div class="box question">
+            <h2>❔ Question 1 ❔</h2>
+            <form id="question">
+                <p>The boy is trying to water a big tree, but his pail is clogged!</p>
+                <label for="answer">What's stuck in his pail?</label>
+                <input type="text" name="answer" id="answer" required>
+                <button type="submit">Answer</button>
+            </form>
+        </div>
+        <div class="box hint">
+            <div class="hintbox">
+                <button id="reveal-hint">🔎 Reveal Hint</button>
+                <p id="hint-content" hidden>blah</p>
+            </div>
+            <dialog id="confirm-modal">
+                <div class="modal-content">
+                    <h2>Are you sure?</h2>
+                    <p id="confirm-desc">X</p>
+                    <div class="modal-actions">
+                        <button id="cancel">Nevermind</button>
+                        <button id="confirm" class="btn-danger">Gimme the hint!</button>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+    </main>
+</body>
+</html>
