@@ -4,8 +4,8 @@
     <title>Chloe's Scavenger Hunt!</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="next-step" content="board"/>
-    <meta name="answer" content="board"/>
+    <meta name="next-step" content="trader"/>
+    <meta name="answer" content="23.99"/>
     <script src="answer-form.js" defer></script>
     <script src="hints.js" defer></script>
     <link rel="stylesheet" href="index.css">
@@ -16,10 +16,15 @@
     </header>
     <main>
         <div class="box question">
-            <h2>Part 8</h2>
+            <h2>Part 7: The Coffee</h2>
             <form id="question">
-                <p>Now hopped up on energy, the duck wants desperately to make it up to you. He offers to buy you $20 chicken tenders over a game of Catan, but you inform him that his favorite spot for that went out of business! He is now beside himself, overwhelmed with grief. You must take him there to mourn and find the next clue.</p>
-                <label for="answer">Passcode:</label>
+                <p>Now hopped up on energy, the duck wants desperately to make it up to you. "Let's go get some drinks!" He says.
+                <br><br>
+                "I heard tell of stockbroker out in Clarendon who sells some drinks. Why, I bet you could buy a bottle of [DRINK HERE] for $2!"
+                <br><br>
+                He's almost certainly wrong about most of that, but it's worth checking just in case.
+                </p>
+                <label for="answer">How much does it actually cost?</label>
                 <input type="text" name="answer" id="answer" required>
                 <button type="submit">Answer</button>
             </form>
@@ -27,7 +32,7 @@
         <div class="box hint">
             <div class="hintbox">
                 <button id="reveal-hint">🔎 Reveal Hint</button>
-                <p id="hint-content" hidden>While this establishment is gone in Clarendon, it lives on in Dupont, still with the board games, but no more food.</p>
+                <p id="hint-content" hidden>There's no way a stockbroker is selling wine. The duck must be mixing up synonyms here or something.</p>
             </div>
             <dialog id="confirm-modal">
                 <div class="modal-content">

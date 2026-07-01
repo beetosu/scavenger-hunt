@@ -25,6 +25,7 @@ main {
         background-color: #22222233;
         padding: 8px;
         border-radius: 8px;
+        max-width: 500px;
 
         &.hint {
             width: 95%;
@@ -71,6 +72,16 @@ main {
                     background-color: #6f8cd7;
                 }
             }
+        }
+    }
+
+    #start-hunt {
+        display: flex;
+
+        a {
+            margin: 0 auto;
+            font-size: 20px;
+            padding-top: 24px;
         }
     }
 }
