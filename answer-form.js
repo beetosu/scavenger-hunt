@@ -23,3 +23,5 @@ form.addEventListener('submit', function (event) {
     }
     alert(failureMessage);
 });
+
+console.log('hey!!!!! stop doing that!!!!! no peeking!!!!')
