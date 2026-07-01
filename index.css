@@ -7,6 +7,10 @@ header {
     text-align: center
 }
 
+a {
+    color: #a8a156;
+}
+
 main {
     margin: auto;
     width: fit-content;
