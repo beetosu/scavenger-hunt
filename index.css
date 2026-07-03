@@ -7,7 +7,8 @@
 body {
     font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
     background-color: var(--bg-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    image-rendering: pixelated;
 }
 
 header {
